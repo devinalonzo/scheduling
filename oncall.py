@@ -26,7 +26,7 @@ SCHEDULING_FOLDER = os.path.join(DESKTOP, "On-Call Scheduling")
 # SCHEDULE_FILE will be set dynamically based on the year
 # Set up logging
 LOG_FILE = os.path.join(SCHEDULING_FOLDER, 'schedule_log.txt')
-logging.basicConfig(filename=LOG_FILE, level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+#logging.basicConfig(filename=LOG_FILE, level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Ensure the folder exists
 os.makedirs(SCHEDULING_FOLDER, exist_ok=True)
@@ -481,7 +481,7 @@ def recalculate_counts(employees, date_primary, date_backup1, date_backup2):
         if primary in primary_counts:
             primary_counts[primary] += 1
             #logging.debug('Incremented primary count for %s on %s. New count: %d', primary, date, primary_counts[primary])
-        else:
+        #else:
             #logging.warning('Primary employee %s on %s not found in employee list.', primary, date)
 
     for date in date_backup1:
@@ -489,7 +489,7 @@ def recalculate_counts(employees, date_primary, date_backup1, date_backup2):
         if backup1 in backup_counts:
             backup_counts[backup1] += 1
             #logging.debug('Incremented backup1 count for %s on %s. New count: %d', backup1, date, backup_counts[backup1])
-        else:
+        #else:
             #logging.warning('Backup1 employee %s on %s not found in employee list.', backup1, date)
 
     for date in date_backup2:
@@ -497,7 +497,7 @@ def recalculate_counts(employees, date_primary, date_backup1, date_backup2):
         if backup2 in backup_counts:
             backup_counts[backup2] += 1
             #logging.debug('Incremented backup2 count for %s on %s. New count: %d', backup2, date, backup_counts[backup2])
-        else:
+        #else:
             #logging.warning('Backup2 employee %s on %s not found in employee list.', backup2, date)
 
     #logging.debug('Finished recalculating counts.')
