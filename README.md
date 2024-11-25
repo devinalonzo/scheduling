@@ -1,7 +1,7 @@
 # scheduling
 Introduction
 
-To enhance our operational efficiency, prioritize employee well-being, and bolster workplace safety, we are introducing a new scheduling system. This system designates a primary on-call employee for a full week, supported by backup employees who maintain their regular daytime schedules. By relieving the primary employee from daytime duties during their on-call week, we aim to prevent burnout and ensure they are well-rested and alert when responding to critical situations.
+To enhance our operational efficiency, prioritize employee well-being, and bolster workplace safety, I believe we should introduce a new scheduling system. This system designates a primary on-call employee for a full week, supported by backup employees who maintain their regular daytime schedules. By relieving the primary employee from daytime duties during their on-call week, we aim to prevent burnout and ensure they are well-rested and alert when responding to critical situations.
 
 Overview of the Scheduling System
 
